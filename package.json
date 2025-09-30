@@ -7,8 +7,8 @@
     "dev": "expo start",
     "android": "expo run:android",
     "ios": "expo run:ios",
-    "lint": "tsc -p tsconfig.json --noEmit",
-    "test": "node --test"
+    "lint": "eslint .",
+    "test": "jest"
   },
   "dependencies": {
     "@react-navigation/native": "^6.1.9",
@@ -42,9 +42,24 @@
     "@hookform/resolvers": "^3.3.4"
   },
   "devDependencies": {
+    "@testing-library/jest-native": "^5.4.3",
+    "@testing-library/react-native": "^12.5.2",
+    "@types/jest": "^29.5.12",
     "@types/react": "18.2.38",
     "@types/react-dom": "18.2.18",
-    "typescript": "^5.3.3",
-    "ts-node": "^10.9.1"
+    "@types/react-native": "0.73.2",
+    "@types/react-native-vector-icons": "^6.4.18",
+    "@typescript-eslint/eslint-plugin": "^6.17.0",
+    "@typescript-eslint/parser": "^6.17.0",
+    "babel-jest": "^29.7.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.1.1",
+    "react-test-renderer": "18.2.0",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.3.3"
   }
 }
